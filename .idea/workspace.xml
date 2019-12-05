@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8552d043-d00e-4379-b12d-21669d59fceb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Day4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/Day1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode/Day1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/Day3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AdventOfCode/Day3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/things.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Day4">
+  <component name="RunManager" selected="Application.Day5">
     <configuration name="Day1" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1" />
       <module name="AdventOfCode" />
@@ -81,14 +78,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day5" />
+      <module name="AdventOfCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Day1" />
       <item itemvalue="Application.Day2" />
       <item itemvalue="Application.Day3" />
       <item itemvalue="Application.Day4" />
+      <item itemvalue="Application.Day5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day5" />
         <item itemvalue="Application.Day4" />
       </list>
     </recent_temporary>
@@ -106,7 +112,8 @@
       <workItem from="1575377147235" duration="4440000" />
       <workItem from="1575381603156" duration="282000" />
       <workItem from="1575381899163" duration="1147000" />
-      <workItem from="1575447920185" duration="1658000" />
+      <workItem from="1575447920185" duration="2364000" />
+      <workItem from="1575538848427" duration="2997000" />
     </task>
     <servers />
   </component>
