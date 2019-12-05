@@ -53,6 +53,5 @@ public class Day5 {
             if (br) break;
             i+=moves[opCode];
         }
-
     }
 }
