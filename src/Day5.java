@@ -23,8 +23,7 @@ public class Day5 {
             if(opCode==6) i=(param[0]==0)?param[1]:i+3;
             if(opCode==7) inputs[inputs[i+3]]=(param[0]<param[1])?1:0;
             if(opCode==8) inputs[inputs[i+3]]=(param[0]==param[1])?1:0;
-            if(opCode==99) br = true;
-            if (br) break;
+            if(opCode==99) break;
             i+=moves[opCode];
         }
     }
