@@ -29,12 +29,10 @@ public class Day5 {
                     System.out.println(param[0]);
                     break;
                 case 5:
-                    if(param[0]!=0) i=param[1];
-                    else i+=3;
+                    i=(param[0]!=0)?param[1]:i+3;
                     break;
                 case 6:
-                    if(param[0]==0) i=param[1];
-                    else i+=3;
+                    i=(param[0]==0)?param[1]:i+3;
                     break;
                 case 7:
                     inputs[inputs[i+3]]=(param[0]<param[1])?1:0;
