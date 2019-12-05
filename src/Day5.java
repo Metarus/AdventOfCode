@@ -15,39 +15,15 @@ public class Day5 {
                 }
             } catch(Exception e) {}
             int opCode=inputs[i]%100;
-            switch (opCode) {
-                case 1:
-                    inputs[inputs[i+3]]=param[0]+param[1];
-                    break;
-                case 2:
-                    inputs[inputs[i+3]]=param[0]*param[1];
-                    break;
-                case 3:
-                    inputs[inputs[i+1]]=sc.nextInt();
-                    break;
-                case 4:
-                    System.out.println(param[0]);
-                    break;
-                case 5:
-                    i=(param[0]!=0)?param[1]:i+3;
-                    break;
-                case 6:
-                    i=(param[0]==0)?param[1]:i+3;
-                    break;
-                case 7:
-                    inputs[inputs[i+3]]=(param[0]<param[1])?1:0;
-                    break;
-                case 8:
-                    inputs[inputs[i+3]]=(param[0]==param[1])?1:0;
-                    break;
-                case 99:
-                    br = true;
-                    break;
-                default:
-                    System.out.println("Something went wrong at index "+i);
-                    br = true;
-                    break;
-            }
+            if(opCode==1) inputs[inputs[i+3]]=param[0]+param[1];
+            if(opCode==2) inputs[inputs[i+3]]=param[0]*param[1];
+            if(opCode==3) inputs[inputs[i+1]]=sc.nextInt();
+            if(opCode==4) System.out.println(param[0]);
+            if(opCode==5) i=(param[0]!=0)?param[1]:i+3;
+            if(opCode==6) i=(param[0]==0)?param[1]:i+3;
+            if(opCode==7) inputs[inputs[i+3]]=(param[0]<param[1])?1:0;
+            if(opCode==8) inputs[inputs[i+3]]=(param[0]==param[1])?1:0;
+            if(opCode==99) br = true;
             if (br) break;
             i+=moves[opCode];
         }
