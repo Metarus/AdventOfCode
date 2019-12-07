@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
 
 public class Day6 {
     public static int count=0;
@@ -17,6 +18,49 @@ public class Day6 {
             recursiveCount(arr[i][1]);
         }
         System.out.println(count);
+        int san=0;
+        for(int i=0; i<arr.length; i++) {
+            if(arr[i][1].equals("SAN")) san=i;
+        }
+        ArrayList<String> santa=new ArrayList<>();
+        while(true) {
+            boolean br=true;
+            for(int i=0; i<arr.length; i++) {
+                if(arr[i][1].equals(arr[san][0])) {
+                    santa.add(arr[san][0]);
+                    san=i;
+                    br=false;
+                }
+            }
+            if(br) break;
+        }
+        int you=0;
+        for(int i=0; i<arr.length; i++) {
+            if(arr[i][1].equals("YOU")) you=i;
+        }
+        ArrayList<String> youArr=new ArrayList<>();
+        while(true) {
+            boolean br=true;
+            for(int i=0; i<arr.length; i++) {
+                if(arr[i][1].equals(arr[you][0])) {
+                    youArr.add(arr[you][0]);
+                    you=i;
+                    br=false;
+                }
+            }
+            if(br) break;
+        }
+        boolean br=false;
+        for(int i=0; i<youArr.size(); i++) {
+            for(int j=0; j<santa.size(); j++) {
+                if(santa.get(j).equals(youArr.get(i))) {
+                    System.out.println(j+i);
+                    br=true;
+                }
+                if(br) break;
+            }
+            if(br) break;
+        }
     }
     public static void recursiveCount(String start) {
         for(int i=0; i<arr.length; i++) {
